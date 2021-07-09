@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Home</title>
+    <style>
+        .cform{
+  margin-top: 300px;
+  margin-left: 650px;
+    }
+    </style>
+</head>
+<nav class="navbar navbar-dark bg-dark navbar-fixed-top">
+    <a class="navbar-brand" href="#">Stress prediction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/visualize">Data Visualization and Dataset</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<body>
+    
+  <div class="wrapper">
+    <div class="container">
+      <div >
+        <br>
+        <h2><center>DATA VISUALIZATION</center></h2>
+        <p>Data visualization is the representation of data or information in a graph, chart, or other visual format. It communicates relationships of the data with images.
+            Different types of data visualizations present are:<br>
+            Histogram<br>
+            Bar plot<br>
+            Scatter plot<br>
+            Factor plot etc.
+            <br><br>
+          <h6>1.Histogram</h6>
+          <p>A Histogram is representation of the distribution of numerical data, where the data are binned and the count for each bin is represented. More generally, a Histogram is an aggregated bar chart, with several possible aggregation functions.</p>
+          
+        <img src="{{url_for('static', filename='EDA1.png')}}" width="500" height="500"><br><br><br>
+        <h6>2.Barplot</h6>
+        <p>A bar plot or bar chart is a graph that represents the category of data with rectangular bars with lengths and heights that is proportional to the values which they represent. The bar plots can be plotted horizontally or vertically. A bar chart describes the comparisons between the discrete categories.</p>
+        <br>
+        <img src="{{url_for('static', filename='EDA2.png')}}" width="500" height="300"><br><br><br>
+        <h6>3.Scatter plot</h6>
+        <p>A scatter plot is a diagram where each value in the data set is represented by a dot.</p>
+        <img src="{{url_for('static', filename='EDA3.png')}}" width="800" height="400"><br><br><br>
+        <h6>4.Correlation Matrix</h6>
+        <p>It is a table which displays the correlation between variables i.e. correlation coefficient. It explains how one or more variables are related to each other. It helps us to predict target variable.</p>
+        <img src="{{url_for('static', filename='EDA4.png')}}" width="800" height="400"><br><br><br>
+
+        <br>
+      <h1><center>ABOUT DATASET</center></h1>
+      <br>
+      <div >
+        <p style = "font-size : 1000px"><center>The Stress dataset consists of 6 attributes and 916 rows in it. <br>
+                                               The Attributes in our Dataset are : <br></center></p>
+                       <center> <table border = '2'>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Data Type</th>
+                            </tr>
+                           <tr>
+                               <td>Age</td>
+                               <td>Integer</td>
+                           </tr>
+                           <tr>
+                               <td>Gender</td>
+                               <td>Integer</td>
+                           </tr>
+                           <tr>
+                               <td>Blood pressure</td>
+                               <td>Integer</td>
+                           </tr>
+                           <tr>
+                               <td>Heartbeat</td>
+                               <td>Integer</td>
+                           </tr>
+                           <tr>
+                               <td>Body Temperature</td>
+                               <td>Float</td>
+                            </tr>
+                            <tr>
+                                <td>Stress Level</td>
+                                <td>Integer</td>
+                            </tr>
+                        </table>
+                        </center>
+                        <br>
+                    <br>
+        <img src="{{url_for('static', filename='dataset.png')}}" width="1000" height="400"><br><br>
+        <br>
+      </div>
+      <br>
+      
+      
+      
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<style>
+body {
+    background-color: #D3D3D3;
+}
+
+.col-lg-4 {
+    color: #ffffff;
+}
+</style>
+
+</html>
